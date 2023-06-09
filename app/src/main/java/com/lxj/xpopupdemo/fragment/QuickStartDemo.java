@@ -497,7 +497,7 @@ public class QuickStartDemo extends BaseFragment implements View.OnClickListener
                 XPopup.requestOverlayPermission(getContext(), new XPermission.SimpleCallback() {
                     @Override
                     public void onGranted() {
-                        ToastUtils.showShort("等待2秒后弹出XPopup！！！");
+                        ToastUtils.showShort("等待10秒后弹出XPopup！！！");
                         ActivityUtils.startHomeActivity();
                         new Handler().postDelayed(new Runnable() {
                             @Override
@@ -512,7 +512,7 @@ public class QuickStartDemo extends BaseFragment implements View.OnClickListener
                                             }
                                         }).show();
                             }
-                        }, 1000);
+                        }, 10000);
                     }
 
                     @Override
